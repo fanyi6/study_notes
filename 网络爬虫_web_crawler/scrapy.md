@@ -86,9 +86,9 @@ scrapy crawl 爬虫名称
 
 ## scrapy工作原理
 
-![image-20220405210621049](/Users/Zander/Typora库/img/image-20220405210621049.png)
+![image-20220405210621049](/img/image-20220405210621049.png)
 
-![image-20220405210633381](/Users/Zander/Typora库/img/image-20220405210633381.png)
+![image-20220405210633381](/img/image-20220405210633381.png)
 
 
 
