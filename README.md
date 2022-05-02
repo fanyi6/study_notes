@@ -1,8 +1,1 @@
-# 仓库目录
-
-## 网络爬虫_web_crawler
-- requests
-- Scrapy
-
-## git使用方法及连接gitee_github
-- git使用方法
+**本仓库主要是学习笔记及一些记录，欢迎大家交流！**
