@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>笔记：盒子模型</title>
+    <style>
+        .box{
+            /* 盒子内容区域的宽高 */
+            width: 200px;
+            height: 200px;
+
+            /* 设置自动内减 */
+            box-sizing: border-box;
+
+            /* 设置背景辅助色 */
+            background-color: #808080;
+
+            /* 设置边框：10px宽度，边框样式，颜色取值 */
+            border: 10px solid #000;
+            /* 边框样式还可以是虚线 */
+            /* border: 10px dashed #000; */
+            /* 还可以是点线 */
+            /* border: 10px dotted #000; */
+
+            /* 给单方向设置边框 border-方位名词 */
+            /* border-left: 5px solid #000; */
+
+            
+            /* 内边距 */
+            /* 给四面都加上内边距 */
+            /* padding: 10px; */
+            /* 给上下 和左右设置不一样的内边距 */
+            /* padding: 10px 20px; */
+            /* 给上设置10px 左右设置20px 下设置30px */
+            /* padding: 10px 20px 30px ; */
+            /* 给上下左右设置不同的内边距 */
+            /* padding : 10px 20px 30px 40px; */
+            /* 给单个方向设置内边距 */
+            /* padding-left: 10px ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

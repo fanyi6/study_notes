@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无缝动画</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 600px;
+        height:300px;
+        margin: 100px auto;
+        text-align: center;
+    }
+
+    .box h2{
+        color: red;
+        font-size: 50px;
+        animation: h2 0.3s infinite;
+    }
+
+    @keyframes h2 {
+        50%{color: green;}
+        100%{color: yellow;}
+    }
+
+    .box .mark{
+        width: 600px;
+        height: 200px;
+        border: 2px solid #000;
+        overflow: hidden;
+    }
+
+    .box ul{
+        list-style: none;
+        width: 2600px;
+        animation: imgrun 5s infinite linear;
+
+    }
+
+    @keyframes imgrun {
+        to{
+            transform: translateX(-1271.6px);
+        }
+    }
+
+    .mark:hover ul{
+        animation-play-state: paused;
+    }
+
+    .box img{
+        height: 200px;
+    }
+
+    .box li{
+        float: left;
+    }
+
+</style>
+<body>
+    <div class="box">
+        <h2>学生妹 包夜30</h2>
+        <div class="mark">
+            <ul>
+                <li><img src="../img/01730EF8-D834-4816-BE72-77622B9BCF00_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/0221618C-A433-4E8E-846E-B7DC162BEF5C_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/02DC2295-3925-4A0F-BF4E-45C0267714B8_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/735E9BA8-E9C9-44B6-AF9B-F0955DF0BF0D_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/8FE868C4-24C7-4037-BD24-0B894941B591_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/AB856FB6-C5FB-480C-B69B-3F492CB08267_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/5FF2516D-52F2-480C-8D3B-345EEFCCD604_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/8ABB527B-16CF-494C-AB43-3D95EBB27C72_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/39167A69-B710-4BD9-8A52-DDE8CBE38DBB_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/01730EF8-D834-4816-BE72-77622B9BCF00_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/0221618C-A433-4E8E-846E-B7DC162BEF5C_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/02DC2295-3925-4A0F-BF4E-45C0267714B8_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/735E9BA8-E9C9-44B6-AF9B-F0955DF0BF0D_1_105_c.jpeg" alt=""></li>
+                <li><img src="../img/8FE868C4-24C7-4037-BD24-0B894941B591_1_105_c.jpeg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

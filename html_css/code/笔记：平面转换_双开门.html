@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平面转换_双开门</title>
+</head>
+<style>
+    .box{
+        width: 1366px;
+        height: 600px;
+        margin: 50px auto;
+        background-image: url(../img/bg.jpg);
+        overflow: hidden;
+    }
+
+    .box::after,
+    .box::before{
+        content: "";
+        width: 683px;
+        height: 600px;
+        float: left;
+        background: url(../img/fm.jpg);
+        transition: all 0.5s;
+    }
+
+    .box::after{
+        background: url(../img/fm.jpg) right 0;
+    }
+
+    .box:hover::before{
+        transform: translateX(-100%);
+    }
+
+    .box:hover::after{
+        transform: translateX(100%);
+    }
+</style>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯云项目</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header{
+        position: relative;
+        height: 40px;
+        background-color: #2b303b;
+    }
+
+    .header img{
+        position: absolute;
+        left: 240px;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+
+    .header ul{
+        list-style: none;
+        position: absolute;
+        right: 240px;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+
+    .header li{
+        float: left;
+        margin-right: 8px;
+        color: #fff;
+    }
+
+    .header a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #fff;
+    }
+
+    .banner{
+        position: relative;
+        height: 480px;
+        background: url(../img/banner.png) repeat-x;
+    }
+
+    .nav{
+        width: 250px;
+        height: 480px;
+        background-color: #1b2a3f;
+        position: absolute;
+        left: 240px;
+    }
+
+    .nav ul{
+        position: relative;
+        list-style: none;
+        margin: 0 auto;
+    }
+
+    .nav li{
+        display: block;
+        height: 40px;
+    }
+
+    .nav div{
+        width: 210px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .nav a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .nav li a:nth-child(2){
+        float: right;
+    }
+
+    .section{
+        position: relative;
+        height: 740px;
+        position: relative;
+    }
+
+    .section h2{
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 22px;
+        font-weight: normal;
+    }
+
+    .section>p{
+        position: absolute;
+        top: 94px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+    }
+
+    .section .box{
+        width: 1200px;
+        height: 462px;
+        border: 1px solid #ccc;
+        position: absolute;
+        top: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .box .mrty{
+        width: 441px;
+        height: 348px;
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        position: relative;
+    }
+
+    .box .mrty>h3{
+        display: inline-block;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 8px;
+        font-size: 25px;
+        font-weight: normal;
+    }
+
+    .box img{
+        width: 580px;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+
+    .mrty>p{
+        height: 30px;
+        line-height: 30px;
+         margin-top: 8px;
+         font-size: 11px;
+         color: #666;
+    }
+
+    .mrty>a{
+        width: 164px;
+        height: 49px;
+        border: 2px solid #ffa500;
+        position: absolute;
+        left: 0;
+        bottom: 48px;
+        text-align: center;
+        line-height: 48px;
+        text-decoration: none;
+        font-size: 13px;
+        color: #000;
+    }
+</style>
+<body>
+    <div class="header">
+        <img src="../img/logo.png" alt="">
+        <ul>
+            <li><a href="#">最新活动</a></li>
+            <li>|</li>
+            <li><a href="#">产品</a></li>
+            <li>|</li>
+            <li><a href="#">解决方案</a></li>
+            <li>|</li>
+            <li><a href="#">定价</a></li>
+            <li>|</li>
+            <li><a href="#">文档</a></li>
+            <li>|</li>
+            <li><a href="#">企业中心</a></li>
+            <li>|</li>
+            <li><a href="#">云市场</a></li>
+            <li>|</li>
+            <li><a href="#">开发者支持</a></li>
+            <li>|</li>
+            <li><a href="#">合作与生态</a></li>
+            <li>|</li>
+            <li><a href="#">客户</a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <div class="nav">
+            <div>
+            <ul>
+                <li><a href="">云服务器</a>
+                    <a href="#">&gt;</a>
+                </li>
+                <li><a href="">轻量应用服务器</a>
+                    <a href="#">&gt;</a>
+                </li>
+                <li><a href="">域名注册</a>
+                    <a href="#">&gt;</a>
+                </li>
+                <li><a href="">网站备案</a>
+                    <a href="#">&gt;</a>
+                </li>
+                <li><a href="">对象存储</a>
+                    <a href="#">&gt;</a>
+                </li>
+                <li><a href="">云硬盘</a>
+                    <a href="#">&gt;</a>
+                </li>
+                <li><a href="">云数据库</a>
+                    <a href="#">&gt;</a>
+                </li>
+                <li><a href="">云数据库</a>
+                    <a href="#">&gt;</a>
+                </li>
+                <li><a href="">批量计算</a>
+                    <a href="#">&gt;</a>
+                </li>
+                <li><a href="">容器服务</a>
+                    <a href="#">&gt;</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>云从业者培训及认证</h2>
+        <p>好好学习，天天向上</p>
+        <div class="box">
+            <div class="mrty">
+                <h3>在线课程</h3>
+                <p>本课程专为云计算初学者、学生、个人开发者打造，购买云+校园任意套餐可免费观看课程视频本课程专为云计算初学者、学生、个人开发者打造，购买云+校园任意套餐可免费观看课程视频本课程专为云计算初学者、学生、个人开发者打造，购买云+校园任意套餐可免费观看课程视频本课程专为云计算初学者、学生、个人开发者打造，购买云+校园任意套餐可免费观看课程视频本课程专为云计算初学者、学生、个人开发者打造，购买云+校园任意套餐可免费观看课程视频</p>
+                <a href="#">开始学习</a>
+            </div>
+            <img src="../img/right.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

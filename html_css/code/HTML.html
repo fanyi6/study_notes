@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>这是网页的标题</title>
+</head>
+
+<body>
+    <!-- 这里是网页的主体，后续代码都是在这里写 -->
+
+<h1>HTML标签</h1>
+
+
+    <h1>排版标签 -- 这个是一级标题</h1>
+
+        <!-- <hr> 是水平线标签 -->
+        <hr>
+
+        <h2>这个是二级标题，再往下还有h3-h6</h2>
+
+        <p>这是一个段落标签，一般长段文字内容都是在这里书写</p>
+
+        <!-- <br> 是一个换行标签 -->
+        你好！！！<br>我是凡一
+        
+        
+    <h1>文本格式标签</h1>
+        <hr>
+
+        <b>加粗文字</b> <br>
+        <u>给文字加下划线</u> <br>
+        <i>让文字倾斜</i><br>
+        <s>给文字加删除线</s>
+
+    <h1>媒体标签</h1>
+    <hr>
+
+
+        <h2>路径</h2>
+        <h3>绝对路径</h3>
+            <p>从盘符开始或者网络路径地址</p>
+        <h3>相对路径</h3>
+            <h4>同级目录</h4>
+                <p>直接写文件名字即可 -- 快捷方式输入./即可选择图片</p>
+            <h4>下级目录</h4>
+                <p>先进入目标文件所在的目录，然后一次向下选 -- 快捷方式./选择目标文件所在目录然后依次向下选</p>
+
+            <h4>上级目录</h4>
+                <p>先确定目标文件所在的目录，然后../返回到目标文件目录依次向下选 -- 快捷键../ 选择目标文件所在目录然后依次向下选</p>
+
+
+        <h2>图片标签</h2>
+        <img src="../img/dog.jpeg" alt="图片加载失败" title="这是一个图片标签" width="500">
+        <!-- src 里面是图片的路径 -->
+        <!-- alt 是图片加载失败时候显示的内容 -->
+        <!-- title 当鼠标悬停在图片上显示的文字内容 -->
+        <!-- width 设置图片的宽度，hight设置图片的高度，如果只设置一个则等比例缩放-->
+
+
+        <h2>音频标签</h2>
+            <audio src="../mp3/沈明 - 走在冷风中.mp3" controls autoplay loop></audio>
+            <!-- src 是音乐路径 -->
+            <!-- controls 是添加音乐控件，不添加不显示音乐 -->
+            <!-- autoplay 是打开网页自动播放音乐 -->
+            <!-- loop 是循环播放 -->
+            <!-- 音乐格式只支持mp3\wav\ogg -->
+
+        
+        <h2>视频标签</h2>
+            <video src="../mp4/【励志】当你觉得撑不下去的时候，就来看看这条视频 - 001 - 1626167578223.mp4" controls autoplay muted loop width="500"></video>
+            <!-- src 是视频的路径 -->
+            <!-- controls 是添加视频控件 -->
+            <!-- autoplay 是自动播放，但是为了保护用户隐私 需要配合muted实现静音自动播放 -->
+            <!-- loop 是循环播放 -->
+            <!-- 视频格式只支持mp4\webm\ogg -->
+
+
+        <h2>链接标签</h2>
+            <a href="https://image.baidu.com" target="blank">百度图片</a>
+            <!-- href 是要跳转的链接地址 -->
+            <!-- target 是链接打开方式 默认是_self在当前窗口打开覆盖原页面，blank是在新窗口打开 -->
+            <br>
+            <a href="#">回到顶部</a>
+            <!-- 空链接：点击可会到顶部 -->
+
+
+        <h2>列表标签</h2>
+            <ul><h3>无序列表</h3>
+                <li>苹果</li>
+                <li>香蕉</li>
+                <li>西瓜</li>
+            </ul>
+
+            <ol><h3>有序列表</h3>
+                <li>我是第一名</li>
+                <li>我是第二名</li>
+                <li>我是第三名</li>
+            </ol>
+
+            <dl><h3>自定义列表</h3>
+                <dt>帮助中心
+                    <dd>官方文档</dd>
+                    <dd>技术支持</dd>
+                    <dd>联系我们</dd>
+                </dt>
+                <dt>业务列表</dt>
+                    <dd>股票</dd>
+                    <dd>可转债</dd>
+                    <dd>基金</dd>
+            </dl>
+            
+
+        <h2>表格标签</h2>
+            <h3>基本标签</h3>
+                <!-- <table> 表格的整体</table> -->
+                <table border="1" width="500" height="500">  
+                    <!-- border 边框熟悉 num是边框宽度 width是表格宽度 height是表格高度-->
+
+                    <!-- <caption> 表格的标题</caption> -->
+                    <caption><h3>信息表</h3></caption>
+
+                    <thead>
+                         <!-- <tr>每一行</tr> -->
+                        <tr>
+                            <!-- <th>表头单元格</td> -->
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                        </tr>
+                    </thead>
+ 
+                    <tbody>
+                        <tr>
+                            <!-- <td>单元格</td> -->
+                            <td>凡一</td>
+                            <td>男</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>猪猪</td>
+                            <td rowspan="2">公</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>奥利奥</td>
+                            <!-- <td>公</td> -->
+                            <td>三个月</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>评价</td>
+                            <td colspan="2">威武霸气</td>
+                            <!-- <td>16</td> -->
+                        </tr>
+                    </tfoot>
+                </table>
+            
+        <h2>表单标签</h2>
+            <h3>input系列</h3>
+            <form >
+                <!-- <input type="text"> 文本框 placeholder是占位符-->
+                姓名：<input type="text" placeholder="请输入姓名">
+                <br><br>
+                <!-- <input type="password"> 密码框-->
+                密码：<input type="password" placeholder="请输入密码">
+                <br><br>
+                <!-- <input type="radio" 单选框 checked是默认选择> -->
+                性别：<input type="radio" name="sex" checked>男
+                    <input type="radio" name="sex"> 女
+                <br><br>
+                <!-- <input type="checkbox"> 复选框 checked是默认选择-->
+                爱好：<input type="checkbox"> 羽毛球
+                    <input type="checkbox" checked> 女
+                    <input type="checkbox"> 篮球
+                <br><br>
+                <!-- <input type="file"> 文件选择器-->
+                请上传头像：<br><br>
+                <input type="file">
+                <br><br> 
+                <!-- 按钮，三种类型 -->
+                <input type="submit" value="提交资料">
+                <input type="reset" value="重置">
+                <input type="button" value="普通按钮">
+            </form>
+
+            <h3>button标签</h3>
+                <button type="submit">提交资料</button>
+                <button type="reset">重置</button>
+                <button type="button">普通按钮</button>
+
+            <h3>select下拉选择标签</h3>
+                <select >城市
+                    <option selected>北京</option>
+                    <option>天津</option>
+                    <option>上海</option>
+                </select>
+
+            <h3>文本域标签</h3>
+                <!-- <textarea cols=可见宽度 rows=可见行数></textarea> -->
+                <textarea cols="30" rows="10"></textarea>
+
+            <h3>label标签 -- 绑定内容和表单关系</h3>
+                <label>
+                    <input type="radio"> 羽毛球
+                </label>
+                
+        <h2>语义化标签</h2>
+            <h3>无语义的标签</h3>
+                <div>一行只有一个</div>
+                <span>一行可以有多个</span>
+
+            <h3>有语义的标签</h3>
+                <header>网页的头部</header>
+                <nav>网页导航</nav>
+                <footer>网页底部</footer>
+                <aside>网页侧边栏</aside>
+                <section>网页区块</section>
+                <article>网页文章</article>
+        <h2>字符实体</h2>
+            <p>一些特定情况下使用的</p>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微金所导航案例</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 40px;
+        border-bottom: 1px solid #ccc;
+    }
+    ul{
+        width: 1200px;
+        list-style: none;
+        margin: 0 auto;
+    }
+
+    ul li{
+        float: left;
+        box-sizing: border-box;
+        width: 20%;
+        height: 40px;
+        border-right: 1px solid #ccc;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    ul .last{
+        border-right: 0;
+    }
+
+    ul li a{
+        position: relative;
+        display: block;
+        height: 40px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    ul li a img{
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 40px;
+        transform: translateX(-50%);
+        border: 1px solid #ccc;
+    }
+
+    ul li a:hover img{
+        display: block;
+    }
+
+</style>
+<body>
+    <div class="box">
+        <ul>
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <li><a href="#">手机微金所<img src="../img/code.jpg" alt=""></a></li>
+            <li class="last"><a href="#">个人中心</a></li>
+        </ul>
+    </div>
+</body>
+</html>

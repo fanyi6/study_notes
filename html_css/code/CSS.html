@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* 字体大小 */
+        .dx{
+            font-size: 30px;
+        }
+
+        .normal{
+            font-weight: normal;
+        }
+        /* 字体加粗 */
+        .bold{
+            font-weight: bold;
+        }
+        /* 字体倾斜 */
+        .italic{
+            font-style: italic;
+        }
+        /* 修改字体 */
+        .family{
+            font-family: Cochin,黑体,sans-serif;
+        }
+        /* 字体样式连写 */
+        .lx{
+            font:italic bold 30px sans-serif;
+        }
+        /* 水平对齐方式 - 居中对齐 */
+        .hz{
+            text-align: center;
+        }
+
+        /* 添加缩进 */
+        .sj{
+            text-indent: 2em;
+        }
+        /* 下划线 */
+        .underline{
+            text-decoration: underline;
+        }
+
+        /* 删除线 */
+        .scx{
+            text-decoration: line-through;
+        }
+
+        /* 添加上划线 */
+        .shx{
+            text-decoration: overline;
+        }
+        /* 无衬线 */
+        .none{
+            text-decoration: none;
+        }
+
+        /* 居中 */
+        .jz{
+            width: 500px;
+            height: 500px;
+            background-color: #808080;
+            /* 作用于大盒子div p h让其居中 */
+            margin:0 auto
+        }
+        /* 行高 上下间距是（50-字体大小）/2 */
+        .d1{
+            line-height: 50px;
+        }
+        /* 行高 倍数 */  
+        .d4{
+            line-height: 5;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="dx">字体大小</p>
+    <div class="normal">正常文字</div>
+    <div class="bold">加粗的文字</div>
+    <div class="italic">倾斜的文字</div>
+    <h2>常见字体系列</h2>
+        <h3>无衬线字体 sans-serif</h3>
+        <h3>衬线字体</h3>
+        <h3>等宽字体</h3>
+
+        <div class="family">字体取值:具体字体1,具体字体2,具体字体3,具体字体4,...,字体系列</div>
+
+    <h2>字体font连写</h2>
+        <div class="lx">连写顺序：style weight size family</div>
+    
+    <h2>文本样式</h2>
+        <div>这是一个正常的文本样式</div>
+        <div class="sj">这是一个缩进的文本,数字em</div>
+
+
+        <h3>文本修饰</h3>
+        <div class="underline">添加下划线</div>
+        <div class="scx">添加删除线</div>
+        <div class="shx">添加上划线</div>
+        <a href="#" class="none">百度一下</a>
+
+    <div class="hz">
+        我是一个文本
+    </div>
+
+
+    <div class="jz">一个盒子</div>
+
+
+    <h2>行高</h2>
+        <p class="d1">我是一行文字</p>
+        <p class="d2">我是一行文字</p>
+        <p>我是一行文字</p>
+        <p class="d4">我是一行文字</p>
+
+</body>
+</html>

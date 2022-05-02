@@ -1,0 +1,350 @@
+/* 快捷菜单 xtx-shortcut */
+.xtx-shortcut{
+    height: 52px;
+    background-color: #333;
+}
+
+.xtx-shortcut .container{
+    height: 52px;
+    /* ps */
+    /* background-color: red; */
+}
+
+.xtx-shortcut .container li{
+    float: left;
+    line-height: 52px;
+    color: #666;
+}
+
+.xtx-shortcut .container a{
+    margin: 0 16px;
+    color: #dcdcdc;
+    font-size: 14px;
+}
+
+.xtx-shortcut .container li:last-child a{
+    margin-right: 0;
+}
+
+.xtx-shortcut .moblie::before{
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    /* ps */
+    /* background-color: red; */
+    margin-right: 8px;
+    margin-top: -3px;
+    background: url(../images/sprites.png) -160px -70px;
+    vertical-align: middle;
+}
+
+
+/* 主导航 xtx-main-nav */
+.xtx-main-nav{
+    height: 100px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    /* ps */
+    /* background-color: red; */
+}
+
+.xtx-main-nav .logo{
+    width: 207px;
+    height: 70px;
+    margin-left: 25px;
+    /* ps */
+    /* background-color: yellow; */
+}
+
+.xtx-main-nav .logo a{
+    float: left;
+    width: 207px;
+    height: 70px;
+    background: url(../images/logo.png);
+    background-size: 100%;
+    font-size: 0;
+}
+
+.xtx-main-nav .nav li{
+    float: left;
+    margin-top: 26px;
+    margin-right: 48px;
+}
+
+.xtx-main-nav .nav li:first-child{
+    margin-left: 40px;
+}
+
+.xtx-main-nav .nav a:hover{
+    border-bottom: 1px solid #27ba9b;
+    padding-bottom: 7px;
+    color: #27ba9b;
+}
+
+.xtx-main-nav .search{
+    width: 172px;
+    height: 30px;
+    /* background-color: red; */
+    position: relative;
+    margin-top: 24px;
+    margin-left: 34px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.xtx-main-nav .search input{
+    height: 30px;
+    margin-left: 31px;
+}
+
+.xtx-main-nav .search::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    background: url(../images/sprites.png) -80px -70px;
+}
+
+.xtx-main-nav .cart{
+    position: relative;
+    width: 23px;
+    height: 23px;
+    /* ps */
+    /* background-color: yellow; */
+    margin-top: 28px;
+    margin-left: 15px;
+    background: url(../images/sprites.png) -120px -70px;
+}
+.xtx-main-nav .cart span{
+    position: absolute;
+    right: -12px;
+    top: -4px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+}
+
+/* -------------------网页底部 */
+/* 联系方式 xtx-contact */
+.xtx-contact{
+    position: relative;
+    height: 302px;
+}
+
+.xtx-contact .pd{
+    float: left;
+    width: 310px;
+    height: 302px;
+    padding-top: 79px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.xtx-contact dt{
+    color: #999;
+}
+
+.xtx-contact .xtb{
+    width: 93px;
+    height: 92px;
+    border: 1px solid #eee;
+}
+
+.xtx-contact .zxkf{
+    position: absolute;
+    left: 58px;
+    top: 130px;
+}
+
+.xtx-contact .zxkf::before{
+    content: "";
+    display: block;
+    width: 29px;
+    height: 27px;
+    margin: 22px auto 10px;
+    background: url(../images/sprites.png) -250px -70px;
+}
+
+.xtx-contact .wtfk{
+    position: absolute;
+    left: 157px;
+    top: 130px;
+}
+
+.xtx-contact .wtfk::before{
+    content: "";
+    display: block;
+    width: 29px;
+    height: 27px;
+    margin: 22px auto 10px;
+    background: url(../images/sprites.png) -350px -70px;
+}
+
+.xtx-contact .gzh{
+    position: absolute;
+    left: 368px;
+    top: 130px;
+}
+
+.xtx-contact .gzh::before{
+    content: "";
+    display: block;
+    width: 36px;
+    height: 29px;
+    margin: 19px auto 10px;
+    background: url(../images/sprites.png) -250px -15px;
+}
+
+.xtx-contact .wb{
+    position: absolute;
+    left: 467px;
+    top: 130px;
+}
+
+.xtx-contact .wb::before{
+    content: "";
+    display: block;
+    width: 36px;
+    height: 29px;
+    margin: 19px auto 10px;
+    background: url(../images/sprites.png) -350px -15px;
+}
+
+.xtx-contact dd a{
+    font-size: 14px;
+    color: #999;
+}
+
+.xtx-contact .ewm{
+    position: absolute;
+    left: 654px;
+    top: 119px;
+    width: 116px;
+    height: 116px;
+    border: 1px solid #eee;
+    background: url(../uploads/qrcode.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.xtx-contact .xzym{
+    position: absolute;
+    left: 796px;
+    top: 132px;
+    width: 103px;
+    height: 86px;
+    text-align: left;
+    color: #999;
+    font-size: 14px;
+}
+
+.xtx-contact .xzapp a{
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    width: 103px;
+    height: 32px;
+    background-color: #27ba9b;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.xtx-contact .tel{
+    color: #666;
+    font-size: 22px;
+    margin-top: 58px;
+}
+
+.xtx-contact .time{
+    color: #999;
+    font-size: 15px;
+    line-height: 0;
+    margin-top: 17px;
+}
+
+/* ---------宣传服务 xtx-service*/
+.xtx-service{
+    height: 174px;
+    background-color: #333;
+}
+
+.xtx-service .container{
+    width: 1393px;
+    height: 174px;
+    border-bottom: 1px solid #434343;
+    box-sizing: border-box;
+}
+
+.xtx-service .container div{
+    width: 464.33px;
+    height: 174px;
+    /* ps */
+    /* background-color:red; */
+    text-align: center;
+    line-height: 174px;
+    color: #fff;
+    font-size: 28px;
+}
+
+.xtx-service .jgqm::before{
+    content: "";
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    vertical-align: middle;
+    margin-right: 19px;
+    background: url(../images/sprites.png) 0px 0px;
+}
+
+.xtx-service .wlkj::before{
+    content: "";
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    vertical-align: middle;
+    margin-right: 19px;
+    background: url(../images/sprites.png) -130px 0px;
+}
+
+.xtx-service .pzxx::before{
+    content: "";
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    vertical-align: middle;
+    margin-right: 19px;
+    background: url(../images/sprites.png) -65px 0px;
+}
+
+/* ---------版权信息 xtx-copyright */
+.xtx-copyright{
+    height: 168px;
+    background-color: #333;
+    padding-top: 41px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.xtx-copyright p{
+    line-height: 1;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.xtx-copyright a{
+    margin: 0 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+
+

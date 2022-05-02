@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米模块案例</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 1226px;
+        height: 614px;
+        /* background-color: green; */
+        margin: 0 auto;
+    }
+
+    .left{
+        width: 234px;
+        height: 614px;
+        background-color: #800080;
+        float: left;
+    }
+
+    .right{
+        width: 978px;
+        height: 614px;
+        /* background-color: green; */
+        float: right;
+    }
+
+    .item{
+        width: 234px;
+        height: 300px;
+        background-color: #87ceeb;
+        float: left;
+        margin-right: 14px;
+        margin-bottom: 14px;
+    }
+
+    .item:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .item:nth-child(5+n) {
+        margin-bottom: 0;
+    }
+
+</style>
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+</body>
+</html>
