@@ -1,0 +1,273 @@
+body{
+    background-color: #f7f7f8;
+}
+
+/* 主体中每个模块的公共样式 */
+.module-style{
+   background-color: #fff; 
+   margin-bottom: 10px;
+   border-radius: 5px;
+}
+
+/* 主体部分 */
+.main{
+    padding: 12px 11px 80px;
+}
+
+/* 用户信息 */
+.main .user-msg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 85px;
+    padding: 15px 0 15px 11px;
+}
+
+.user-msg .fixed{
+    width: 30px;
+    height: 30px ;
+    background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+
+    margin-right: 11px;
+
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.user-msg .user{
+    flex: 1;
+}
+
+.user .top{
+    display: flex;
+    align-items: center;
+}
+
+.user .top h5{
+    width: 55px;
+    color: #262626;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.user .top p{
+    color: #333333;
+    font-size: 13px;
+}
+
+.user .bottom{
+    margin-top: 5px;
+    /* color: #333333; */
+    font-size: 12px;
+}
+
+.user-msg .more{
+    width: 44px;
+    height: 44px;
+    /* background-color: skyblue; */
+
+    color: #808080;
+    text-align: center;
+    line-height: 44px;
+}
+/* 用户信息 */
+
+
+/* 商品信息 */
+.goods{
+    display: flex;
+    padding: 11px;
+}
+
+.goods .pic{
+    width: 85px;
+    height: 85px;
+
+    margin-right: 12px;
+}
+
+.goods .info{
+    flex: 1;
+}
+
+.goods .info h5{
+    color: 262626;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.goods .info p{
+    display: inline-block;
+    background-color: #f7f7f8;
+
+    padding: 3px 4px;
+
+    color: #888888;
+    font-size: 11px;
+    border-radius: 2px;
+    line-height: 1;
+}
+
+.goods .info p span:first-child{
+    margin-right: 12px;
+}
+
+.goods .price span:first-child{
+    color: #cf4444;
+    font-size: 12px;
+
+    margin-right: 14px;
+}
+
+.goods .price span:first-child i{
+    font-size: 16px;
+}
+
+.goods .price span:last-child{
+    font-size: 12px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.goods .num{
+    width: 44px;
+    height: 44px;
+    /* background-color: yellow; */
+    text-align: center;
+    line-height: 44px;
+}
+
+.goods .num span{
+    color: #262626;
+    font-size: 15px;
+}
+/* 商品信息 */
+
+
+/* 其他信息 */
+.rests{
+    padding: 15px;
+}
+
+.rests div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #262626;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.rests div:nth-child(2){
+    justify-content: flex-start;
+}
+
+.rests div:nth-child(2) span{
+    margin-left: 19px;
+
+    color: #989898;
+    font-size: 12px;
+}
+
+.rests div h5{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.rests div:last-child i{
+    color: #808080;
+    margin-top: 2px;
+}
+
+.rests div:nth-child(-n+2){
+    margin-bottom: 29px;
+}
+/* 其他信息 */
+
+
+
+/* 商品价格 */
+.tariff{
+    padding: 15px;
+}
+
+.tariff div{
+    display: flex;
+    justify-content: space-between;
+
+    color: #262626;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.tariff div:nth-child(-n+2){
+    margin-bottom: 29px;
+}
+
+.tariff div h5{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.tariff div:nth-child(3) span{
+    color: #cf4444;
+}
+/* 商品价格 */
+
+
+
+/* 主体部分 */
+
+
+/* 底部支付 */
+.pay{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    /* background-color: skyblue; */
+    border-top: 1px solid #ededed;
+    padding: 0 10px;
+}
+
+.pay .left{
+    font-size: 12px;
+    color: #1e1e1e;
+}
+
+.pay .left i{
+    font-size: 20px;
+    color: #cf4444;
+    font-family: AccidentalPresidency;
+}
+
+.pay .right a{
+    display: block;
+
+    width: 90px ;
+    height: 35px;
+    background-image: linear-gradient(90deg, 
+        #6fc2aa 5%, 
+        #54b196 100%);
+
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+
+    border-radius: 3px;
+}
+/* 底部支付 */
