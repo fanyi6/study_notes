@@ -1,0 +1,278 @@
+# 移动端特点
+
+
+
+## 移动端和PC网页端不同点
+
+PC屏幕大，网页一般是有固定的版心的
+手机屏幕小，网页宽度多数为100%
+
+**电脑通过谷歌模拟器调试移动端网页效果**
+
+
+
+## 分辨率
+
+**物理分辨率**
+生产屏幕时候加固定的，他是不可被改变的
+
+
+
+**逻辑分辨率**
+
+由软件/驱动决定
+
+**制作网页时候使用的是逻辑分辨率**
+
+
+
+**移动端主流设备分辨率**
+
+一般是参考iPhone6/7/8
+[移动端主流设备分辨率](images/移动端主流设备分辨率.jpg)
+
+
+
+## 视口
+
+使用meta标签设置视口宽度，制作适配不同设备宽度的网页，使得网页宽度和设备宽度(分辨率)相同
+
+
+
+**添加视口**
+一般在vscode生成html时候会自动添加
+
+```html
+<!-- 手动添加方法 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+- viewport:视口
+- width=device-width:视口宽度=设备宽度
+- initial-scale=1.0:缩放1倍（不缩放）
+
+
+
+## 二倍图
+
+现阶段设计稿参考iPhone6/7/8，设备宽度375px产出设计稿。二倍图设计稿尺寸:750px
+
+那么在像素大厨软件测量时候需要将设计图修改成x
+
+
+
+## 百分比布局
+百分比布局， 也叫流式布局
+效果: 宽度自适应，高度固定
+
+[百分比布局案例_京东移动端菜单栏](./%E7%BB%83%E4%B9%A0/01-%E7%99%BE%E5%88%86%E6%AF%94%E5%B8%83%E5%B1%80_%E4%BA%AC%E4%B8%9C%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%8F%9C%E5%8D%95%E6%A0%8F/index.html)
+
+
+
+# Flex布局
+
+多个盒子横向排列设置间距，如果使用浮动和margin那么盒子会脱标，如果使用flex布局就没有这个问题，而且布局更灵活快速
+
+
+
+**flex布局/弹性布局：**
+
+- 是一<font color="red">种浏览器提倡的布局模型</font>
+- 布局网页<font color="red">更简单、灵活</font>
+- 避免<font color="red">浮动脱标</font>的问题
+
+
+
+## 主轴对齐方式
+
+给需要对齐的的子元素父元素添加 **display: flex**
+同时添加**justify-content**调节元素在主轴的对齐方式
+
+|属性值|作用|
+|-----|---|
+|flex-start|默认值，起点开始一次排序|
+|flex-end|终点开始一次排序|
+|center|沿主轴居中排列|
+|space-around|弹性盒子沿主轴均匀排列，空白间距均分在弹性盒子两侧|
+|space-between|弹性盒子沿主轴均匀排列，空白间距均分在相邻盒子之间|
+|space-evenly|弹性盒子沿主轴均匀排列，空白间距均分在弹性盒子与容器之间间距相等|
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体验flex布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            /* 父级元素添加display:flex */
+            display: flex;
+
+            /* 沿主轴对齐方式 */
+            justify-content: space-evenly;
+            border: 1px solid #000;
+        }
+
+        .box div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 父级盒子 容器-->
+    <div class="box">
+        <!-- 子盒子 -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
+```
+
+
+
+## 测轴对齐方式
+
+**align-items：控制所有弹性盒子（添加到弹性容器）**
+**align-self：控制某个弹性盒子在侧轴的对齐方式(添加到弹性盒子)**
+
+|属性值|作用|
+|---|---|
+|flex-start|默认值，起点开始依次排序|
+|flex-end|终点开始一次排序|
+|center|沿测轴居中排列|
+|stretch|默认值，弹性盒子沿着株洲线被拉伸至铺满容器|
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>侧轴对齐方式</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            /* 设置display:flex:; */
+            display: flex;
+
+            /* 所有弹性盒子居中对齐 */
+            align-items: center;
+
+            height: 300px;
+            margin: auto;
+            border: 1px solid #000;
+        }
+        
+        .box div {
+            width: 100px; 
+            height: 100px;
+            background-color: pink;
+        }
+
+        /* 单独设置某个弹性盒子的侧轴对齐方式 */
+        .box div:nth-child(3){
+            align-self: flex-end;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>
+```
+
+
+
+## 伸缩比
+
+可以设置弹性盒子所占父盒子剩余尺寸的比
+
+属性：flex:值;
+取值分类:数值(整数)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 给容器设置flex布局 */
+        .box {
+            display: flex;
+
+            height: 300px;
+            border: 1px solid #000;
+        }
+
+        .box div {
+            height: 200px;
+        }
+
+        /* 第一个盒子固定宽度50px */
+        .box div:first-child{
+            background-color: red;
+            width: 50px;
+        }
+
+        /* 第二个盒子所在剩余部分的3份(剩余部分3+1) */
+        .box div:nth-child(2){
+            background-color: yellow;
+            flex: 3;
+        }
+
+        /* 最后一个盒子所占容器剩余部分的1份(剩余部分3+1) */
+        .box div:last-child{
+            background-color: green;
+            flex: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
+```
+
+
+
+## flex布局案例：小兔鲜儿_确认订单
+
+[小兔鲜儿_确认订单移动端](./%E7%BB%83%E4%B9%A0/02-flex_%E5%B0%8F%E5%85%94%E9%B2%9C%E5%84%BF_%E7%A1%AE%E8%AE%A4%E8%AE%A2%E5%8D%95%E7%A7%BB%E5%8A%A8%E7%AB%AF/xiaotuxian/orders.html)
