@@ -273,6 +273,27 @@ PC屏幕大，网页一般是有固定的版心的
 
 
 
+## 修改主轴方向
+
+主轴默认是水平方向，侧轴默认是垂直方向
+修改主轴方向属性：flex-direction
+|属性值|作用|
+|-----|----|
+|row|行，水平（默认）|
+|<font color="red">column</font>|<font color="red">列，垂直</font>|
+|row-reverse|行，从右向左|
+|column-reverse|列，从下向上|
+
+
+
+## 弹性盒子换行
+
+如果弹性盒子不换行，那么如果一行显示不下盒子不会自动换行而是会挤压变形
+
+弹性盒子换行属性：<font color="red">flex-wrap:wrap</font>;
+
+
+
 ## flex布局案例：小兔鲜儿_确认订单
 
 [小兔鲜儿_确认订单移动端](./%E7%BB%83%E4%B9%A0/02-flex_%E5%B0%8F%E5%85%94%E9%B2%9C%E5%84%BF_%E7%A1%AE%E8%AE%A4%E8%AE%A2%E5%8D%95%E7%A7%BB%E5%8A%A8%E7%AB%AF/xiaotuxian/orders.html)
