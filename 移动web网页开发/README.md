@@ -294,6 +294,9 @@ PC屏幕大，网页一般是有固定的版心的
 
 
 
-## flex布局案例：小兔鲜儿_确认订单
+## flex布局案例
 
 [小兔鲜儿_确认订单移动端](./%E7%BB%83%E4%B9%A0/02-flex_%E5%B0%8F%E5%85%94%E9%B2%9C%E5%84%BF_%E7%A1%AE%E8%AE%A4%E8%AE%A2%E5%8D%95%E7%A7%BB%E5%8A%A8%E7%AB%AF/xiaotuxian/orders.html)
+
+[小兔鲜儿_个人中心web端](./%E7%BB%83%E4%B9%A0/03-flex_%E5%B0%8F%E5%85%94%E9%B2%9C%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83web%E7%89%88/xiaotuxian_web/center.html)
+

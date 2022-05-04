@@ -1,0 +1,302 @@
+.xtx-center-body{
+    background-color: #f6f6f6;
+}
+
+.xtx-center-body .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+
+/* 侧边栏导航 */
+.xtx-nav{
+    width: 227px;
+    /* height: 1348px; */
+    background: #fff;
+}
+
+
+/* 头像部分 */
+.xtx-nav .portrait{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 44px;
+    padding-bottom: 32px;
+    height: 230px;
+}
+
+.xtx-nav .portrait>img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.xtx-nav .portrait .tag>img{
+    width: 15px;
+    margin-bottom: 5px;
+}
+
+.xtx-nav .portrait span{
+    font-size: 18px ;
+}
+
+.xtx-nav .portrait .tag{
+    width: 94px;
+    height: 26px;
+    background-image: linear-gradient(264deg, 
+        #e05e2f 0%, 
+        #ea745e 95%);
+    background-blend-mode: normal, normal;
+    border-radius: 13px;
+
+    text-align: center;
+    line-height: 26px;
+}
+
+.portrait .tag i{
+    font-size: 14px;
+    color: #f9f9f9;
+}
+/* 头像部分 */
+
+
+/* 导航栏公共类 */
+.common{
+    padding: 20px 0 0 52px;
+    border-top: 1px solid #f4f4f4;
+
+    font-size: 14px;
+    line-height: 1;
+}
+
+.xtx-nav .common h4{
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.xtx-nav .common ul li{
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.xtx-nav .common ul li:hover a{
+    color: #5cb99e;
+}
+
+.xtx-nav .common li:hover{
+    color: #5cb99e;
+    list-style: disc;
+}
+/* 导航栏公共类 */
+/* 侧边栏导航 */
+
+
+/* 个人中心信息 */
+.xtx-pp-msg{
+    width: 999px;
+}
+
+/* 个人中心公共栏部分 */
+.common-msg{
+    background-color: #fff;
+    margin-top: 18px;
+    padding: 28px 20px;
+}
+
+.common-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px 0;
+    line-height: 1;
+}
+
+.common-title h4{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.common-title a{
+    color: #999999;
+    font-size: 16px;
+}
+
+.common-list{
+    display: flex;
+    margin-top: 20px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.common-list li{
+    flex: 1;
+    padding: 30px 20px 0 20px; 
+    line-height: 1;
+}
+
+
+.common-list li img{
+    width: 160px;
+    height: 160px;
+}
+
+.common-list li h5{
+    margin-top: 13px;
+    margin-bottom: 10px;
+    width: 160px;
+    font-weight: normal;
+}
+
+.common-list li p{
+    color: #9a2e1f;
+    font-size: 17px;
+}
+
+.common-list li span{
+    font-size: 22px;
+}
+
+/* 更多信息 */
+.more{
+    display: flex;
+    margin-top: 0;
+}
+
+.more .left{
+    border-right: 1px solid #f4f4f4;
+}
+
+.more div{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.more a{
+    font-size: 16px;
+    text-align: center;
+}
+
+.more a img{
+    width: 26px;
+    margin-bottom: 16px;
+
+}
+
+.more div:first-child a:nth-child(3) img{
+    width: 18px;
+}
+
+.more .right span{
+    color: #e05e30;
+    font-size: 25px;
+}
+
+.more .right a{
+    margin-top: -10px;
+}
+
+.more .right p{
+    margin-top: 14px;
+}
+/* 更多信息 */
+
+/* 我的订单 */
+.order .lists>div{
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    padding-left: 10px;
+    height: 137px;
+    border: 1px solid #f4f4f4;
+}
+
+.order .lists .pic-title{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.pic-title .pic img{
+    width: 107px;
+    height: 107px;
+}
+
+.pic-title .txt h5{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.pic-title .txt p{
+    font-size: 14px;
+    color: #999999;
+}
+
+
+.order .lists .state{
+    width: 120px;
+    color: #e05e30;
+    font-size: 14px;
+    text-align: center;
+}
+
+.order .lists .state a{
+    color: #999999;
+    font-size: 14px;
+}
+
+
+.order .lists .pay{
+    height: 137px;
+    width: 200px;
+    text-align: center;
+    border-right: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+}
+
+.order .lists .pay p:first-child{
+    margin-top: 40px;
+    color: #9a2e1f;
+}
+
+.order .lists .pay p{
+    font-size: 14px;
+}
+
+
+.order .lists .click{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    font-size: 14px;
+}
+
+.order .lists .click a:first-child{
+    width: 100px;
+    height: 30px;
+    background-color: #5eb69c;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.order .lists .click a:nth-child(2){
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+
+/* 我的订单 */
+
+/* 个人中心信息 */
+
+
+
+
