@@ -300,3 +300,155 @@ PC屏幕大，网页一般是有固定的版心的
 
 [小兔鲜儿_个人中心web端](./%E7%BB%83%E4%B9%A0/03-flex_%E5%B0%8F%E5%85%94%E9%B2%9C%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83web%E7%89%88/xiaotuxian_web/center.html)
 
+
+
+# 移动适配
+
+## rem
+
+rem是一个单位，1rem=1HTML字号大小
+
+**媒体查询**
+
+能够使用媒体查询设置差异化CSS样式，修改不同视口宽度下html字号大小
+```css
+@media (媒体特性){
+    选择器{
+        CSS属性
+    }
+}
+
+@media (width:372px){
+    html{
+        font-size:37.5rem
+    }
+}
+```
+<font color="red">目前热门布局方案中，将网页等份10份，HTML标签的字号是视口宽度的1/10
+
+**确定rem数值**
+
+rem单位的尺寸=px单位数值/基准根字号
+
+**flexible**
+
+使用flexible js配合rem实现在不同宽度的设备中，网页元素尺寸等比缩放效果
+
+在<body>中引入flexible js
+```html
+<script sec="相对路径"></script> 
+```
+
+
+
+# Less
+
+Less是一个CSS预处理器，Less文件后缀是.less
+但是浏览器不识别less代码，目前阶段，网页要引入对应的CSS文件
+
+**提前在vscode中加入插件：easy less**
+
+
+
+## 基本语法
+|语法|功能|说明|
+|---|----|---|
+|//|单行注释|快捷键ctrl+/|
+|/* */|块注释|快捷键shift+alt+A|
+|+-*(/)|算数运算|除法的写法(1/b)|
+
+
+
+## 嵌套
+
+在less中的写法
+```less
+.father{
+    width:200px;
+
+    .son{
+        color:red;
+
+        &:hover{
+            color:green;
+        }
+    }
+}
+```
+到css中之后语法
+```css
+.father{
+    width:200px;
+}
+.father .son{
+    color:red;
+}
+.father .son:hover{
+    color:green;
+}
+```
+**<font color="red">注意</font>:&不生成后代选择器，表示当前选择器，通常配合伪类或伪元素使用**
+
+
+
+## less变量数值
+
+作用：可以直接批量修改网站中的某一变量
+
+**定义变量**
+@变量名:值;
+
+**使用变量**
+CSS属性:@变量名;
+
+```less
+// 定义变量
+@color:red;
+
+// 使用变量
+.father{
+    color:@color;
+}
+.son{
+    color:@color;
+}
+
+/*此时生成的css文件color属性值就是red
+如果变量修改成@color:green;
+那么css中color的属性值就都会变成green
+*/
+```
+
+
+
+## 导入less
+
+```less
+@import '路径';
+```
+导入less的内容会自动添加到新css里面
+
+
+
+## 导出css
+
+现在默认生成css路径是当前文件同级目录，如果要默认生成到一个单独的css文件夹下需要修改
+
+vscode中配置插件: 设置 → 搜索EasyLess → 在setting.json中编辑 → "less.compile":{添加代码}
+```
+"out":"../css/"
+```
+
+**控制当前Less文件导出路径**
+less文件第一行添加如下代码，注意文件夹名称后面添加/
+```less
+// out: ./css/
+// out: ./css/common.less
+```
+这里的//不是注译
+
+**禁止导出**
+部分less不需要导出css，比如base、common
+```less
+//out: false
+```
