@@ -1,0 +1,133 @@
+@import url(./base.less);
+
+@vw:3.75vw;
+@color:#fb7299;
+
+
+// 头部固定布局
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: (84/@vw);
+    background-color: #fff;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    z-index: 1;
+
+    // 顶部图标
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: (18/@vw);
+        padding-right: (12/@vw);
+        height: (44/@vw);
+
+        .left{
+            i{
+                font-size: (28/@vw);
+                color: @color;
+            }
+        }
+
+        .right{
+            display: flex;
+            a{
+                margin-left: (24/@vw);
+
+                i{
+                    font-size: (22.5/@vw);
+                    color: #ccc;
+                }
+    
+                img{
+                    height: (24/@vw);
+                }
+            }
+        }
+    }
+
+    // 导航入口
+    .bottom{
+
+        ul{
+            display: flex;
+
+            li{
+                padding: 0 (16/@vw);
+
+                a{
+                    font-size: (14/@vw);
+                    line-height: (38/@vw);
+                    padding-bottom: (9/@vw);
+                }
+
+                &.hover{
+                    a{
+                        color: @color;
+                        border-bottom: 2px solid @color;
+                    }
+                }
+            }   
+
+        }
+
+        i{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: (40/@vw);
+            height: (40/@vw);
+            text-align: center;
+            line-height: (40/@vw);
+            color: #ccc;
+            font-size: (22/@vw);
+        }
+    }
+}
+
+// 视频内容模块
+.video-list{
+    padding: (84/@vw) (5/@vw) 0;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li{
+            width: 50%;
+            padding: (8/@vw) (5/@vw);
+
+            .pic{
+                position: relative;
+                width: 100%;
+
+                .ico{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: (8/@vw);
+                    width: 100%;
+                    background-color: rgba(0,0,0,.6);
+
+                    p{
+                        display: block;
+                        color: #fff;
+                        font-size: (12/@vw);
+                    }
+                }
+            }
+
+            h5{
+                margin-top: (5/@vw);
+                font-size: (12/@vw);
+                font-weight: normal;
+            }
+
+        }
+    }
+}
