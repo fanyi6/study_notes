@@ -1,0 +1,99 @@
+// 首页导航
+.navbar-default{
+    background-color: rgba(0,0,0,0);
+    border: 0;
+
+    // 文字导航
+    .navbar-collapse{
+        .navbar-right{
+            li{
+            
+                a{
+                    color: hsla(0,0%,100%,.65);
+                    font-size: 16px;
+    
+                    &:hover{
+                        color: #f2b535;
+                    }
+                }
+                    
+                &:nth-child(1) a,
+                &:nth-child(4) a{
+                    color: #f2b535;
+                }
+            }
+        }
+    }
+}
+
+
+// banner
+.banner{
+
+    @media(min-width:992px){
+        .item{
+            height: 500px;
+        }
+    }
+
+    @media(max-width:992px){
+        .item{
+            height: 400px;
+        }
+    }
+
+    @media(max-width:768px){
+        .item{
+            height: 250px;
+        }
+    }
+
+    .item {
+        img{
+        height: 100%;
+        }
+    }
+
+    .carousel-indicators{
+        li{
+            width: 50px;
+            height: auto;
+        }
+    }
+
+
+}
+
+
+// 开源项目
+.project{
+    padding-top: 30px;
+    text-align: center;
+
+    h4{
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    p{
+        font-size: 16px;
+
+    }
+
+    ul{
+        list-style: none;
+
+        li{
+            // background-color: skyblue;
+            height: 200px;
+            margin-bottom: 15px;
+
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: yellow;
+            }
+        }
+    }
+}
