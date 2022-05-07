@@ -302,6 +302,30 @@ PC屏幕大，网页一般是有固定的版心的
 
 
 
+# 媒体查询
+
+能够根据设备宽度的变化，设置差异化样式
+
+```css
+@media(媒体特性){
+    选择器{
+        样式
+    }
+}
+```
+
+| 特性名称       | 属性                 | 值                               |
+| -------------- | -------------------- | -------------------------------- |
+| 视口的宽和高   | width、height        | 数值                             |
+| 视口最大宽或高 | max-width\mac-height | 数值                             |
+| 视口最小宽或高 | min-width\           | 数值                             |
+| 屏幕方向       | orientation          | portrait：竖屏<br>landscape:横屏 |
+
+
+
+
+
+
 # 移动适配
 
 ## rem
@@ -464,4 +488,59 @@ less文件第一行添加如下代码，注意文件夹名称后面添加/
 
 
 
+# BootStrap
 
+将常见效果进行统一封装后形成的一套代码,基于框架开发，效率高，稳定性高!
+
+中文官网: https://www.bootcss.com/
+
+
+
+## 使用步骤
+
+**下载： https://www.bootcss.com/**
+
+首页 → BootStrap3中文文档 → 下载BootStrap
+
+```
+选择用于生产环境的Bootstrap
+```
+
+
+
+**引入调用**
+
+```css
+<link rel="stylesheet" href="./bootstrap-3.3.7/css/bootstrap.css">
+```
+
+调用时候使用Bootstrap提供的样式
+
+
+
+## 栅格系统
+
+用作于响应式布局，栅格化是指将整个网页的宽度分成若干等份，BootStrap3默认将网页分成12等份！
+
+![image-20220507103433608](/Users/Zander/GitHub/study_notes/移动web网页开发/images/image-20220507103433608-1890878.png)
+
+![image-20220507103755151](/Users/Zander/GitHub/study_notes/移动web网页开发/images/image-20220507103755151.png)
+
+
+
+**.container版心**
+
+.container是 Bootstrap 中专门提供的类名，所有应用该类名的盒子，默认已被指定宽度且居中
+
+.container-fluid也是 Bootstrap 中专门提供的类名，所有应用该类名的盒子，宽度均为 100%。 
+
+分别使用.row类名和 .col类名定义栅格布局的行和列
+
+```
+container类自带间距15px; 
+row类自带间距-15px
+```
+
+
+
+**[BootStrap手册用法](https://v3.bootcss.com/css/#top)**
