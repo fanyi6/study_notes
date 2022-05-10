@@ -94,7 +94,7 @@ var usrName = 'fanyi_c',
 | ------ | ------------------------ | ---- |
 | Number | 数字型，包含整型和浮点型 | 0    |
 | Boolean | 布尔型 | false |
-| Sreing | 字符串 | "" |
+| String | 字符串 | "" |
 | Undefined | var a;声明了变量a但是没有给值 | undefined |
 | null | Var a = null;声明了变量a为空值 | null |
 
