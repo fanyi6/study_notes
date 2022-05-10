@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易ATM</title>
+</head>
+<body>
+    <!-- 
+        - 里面现存有  100 块钱。
+
+        - 如果存钱，就用输入钱数加上先存的钱数, 之后弹出显示余额提示框
+
+        - 如果取钱，就减去取的钱数，之后弹出显示余额提示框
+
+        - 如果显示余额，就输出余额
+
+        - 如果退出，弹出退出信息提示框
+     -->
+</body>
+<script>
+    var deposit = 100;
+    var switchN = true;
+
+    do {
+        var order = parseInt (prompt('请输入您要的操作\n1.存钱\n2.取钱\n3.余额\n4.退出'));
+        
+        switch (order){
+            case 1:
+                var money =parseInt (prompt('请输入存款金额'));
+                deposit += money;
+                alert('您的余额剩余'+deposit+'元');
+                break
+            case 2:
+                var money =parseInt (prompt('请输入取款金额'));
+                deposit -= money;
+                alert('您的余额剩余'+deposit+'元');
+                break
+            case 3:
+                alert('您的余额剩余'+deposit+'元');
+                break
+            case 4:
+                switchN = false
+                break
+        }
+    } while(switchN)
+
+</script>
+</html>
