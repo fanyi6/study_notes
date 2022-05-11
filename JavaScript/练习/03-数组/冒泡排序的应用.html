@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 请对 arr数组中的元素，进行从大到小的排序 -->
+</body>
+<script>
+    var arr = [220,190,140,160,150,180,170,50,150,88,108];
+
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr.length; j++) {
+            if (arr[j] > arr[j+1]) {
+                var temp = arr[j];
+                arr[j] = arr[j+1]
+                arr[j+1] = temp
+            }
+        }
+    }
+
+    alert(arr)
+</script>
+</html>

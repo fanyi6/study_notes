@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易计算器</title>
+</head>
+<body>
+    <!-- 用户在弹出的输入框中选择要做的运算
+
+  - 用户选择后弹出两个输入框，让用户输入数据
+
+  - 根据用户选择的操作和输入的数据，计算出最后结果并弹出提示框显示结果
+
+  - 操作界面如下： -->
+</body>
+<script>
+    function counter () {
+        var onOff = true;
+        var result = 0;
+        do {
+            var select =parseInt (prompt('欢迎使用简易计算器:\n1.加法运算;\n2.减法运算;\n3.乘法运算\n4.除法运算;\n5.退出'))
+
+            if (select == 5) {
+                onOff = false
+            } else {
+                var num1 = parseFloat(prompt('请输入第一个数字'))
+                var num2 = parseFloat(prompt('请输入第二个数字'))
+
+                switch (select) {
+                    case 1:
+                        result = num1 + num2;
+                        break
+                    case 2:
+                        result = num1 - num2;
+                        break
+                    case 3:
+                        result = num1 * num2;
+                        break
+                    case 4:
+                        result = num1 / num2;
+                        break
+                }
+                alert(result);
+            }
+        } while (onOff) 
+    }
+
+    counter ();
+</script>
+</html>

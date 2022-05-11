@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>判断传入数是否为质数</title>
+</head>
+<body>
+    <!-- 求某个数是否是质数，该数作为参数传入函数中，如果该数是素质数，则函数的返回值为true，否为false -->
+</body>
+<script>
+    function isPrime (num) {
+        if (num <= 1) {
+            return num + '不是质数';
+        } else if (num % 2 !== 0 && num % 3 !== 0 && num % 5 !== 0 && num % 7 !== 0) {
+            return num + '就是质数'
+        } else {
+            return num + '不是质数'
+        }
+    }
+
+    alert(isPrime(-11))
+</script>
+</html>
