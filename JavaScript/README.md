@@ -2,7 +2,7 @@
 
 **Html/Css/Js的关系**
 
-![图片9](/Users/Zander/GitHub/study_notes/JavaScript/images/图片9-2014905.png)
+![图片9](./images/图片9-2014905.png)
 
 
 
@@ -16,7 +16,7 @@
 </script>
 ```
 
-在html中可以将js代码写到<script>中，可以写多行，一般把script放到<body>后面
+在html中可以将js代码写到script中，可以写多行，一般把script放到body后面
 
 **外部JS文件**
 
@@ -147,7 +147,7 @@ var Age = 21.3747;  // 小数
 
      用来判断一个变量是否为非数字的类型，返回 true 或者 false
 
-![图片17](/Users/Zander/GitHub/study_notes/JavaScript/images/图片17.png)
+![图片17](./images/图片17.png)
 
    ```js
   var usrAge = 21;
@@ -289,7 +289,7 @@ console.log(typeof num) // 结果 number
 
 ​		不同类型的返回值
 
-![图片18](/Users/Zander/GitHub/study_notes/JavaScript/images/图片18.png)
+![图片18](./images/图片18.png)
 
 
 
@@ -319,21 +319,21 @@ console.log(typeof num) // 结果 number
 
 - 转换为字符串
 
-  ![图片19](/Users/Zander/GitHub/study_notes/JavaScript/images/图片19.png)
+  ![图片19](./images/图片19.png)
 
   - toString() 和 String()  使用方式不一样。
   - 三种转换方式，更多第三种加号拼接字符串转换方式， 这一种方式也称之为隐式转换。
 
 - 转换为数字型（重点）
 
-  ![图片20](/Users/Zander/GitHub/study_notes/JavaScript/images/图片20.png)
+  ![图片20](./images/图片20.png)
 
   - 注意 parseInt 和 parseFloat 单词的大小写，这2个是重点
   - 隐式转换是我们在进行算数运算的时候，JS 自动转换了数据类型
 
 - 转换为布尔型
 
-  ![图片21](/Users/Zander/GitHub/study_notes/JavaScript/images/图片21.png)
+  ![图片21](./images/图片21.png)
 
   - 代表空、否定的值会被转换为 false  ，如 ''、0、NaN、null、undefined  
 
